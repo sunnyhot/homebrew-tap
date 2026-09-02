@@ -1,0 +1,27 @@
+name: bump
+on:
+  schedule:
+    - cron: "0 21 * * *"  # UTC 21:00 = 北京 05:00
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump casks to latest releases
+        run: python3 scripts/bump.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if changed
+        run: |
+          git config user.name "tap-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "bump: casks -> latest releases"
+            git push
+          fi
