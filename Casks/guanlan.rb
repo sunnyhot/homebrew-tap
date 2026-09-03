@@ -1,6 +1,6 @@
 cask "guanlan" do
-  version "4.9.7"
-  sha256 "016608e0a3275995b16f07494d00586e4018b65a83a84f2e2c989217c893ef18"
+  version "4.9.8"
+  sha256 "50a2a15891a566750c570f5df4ffe73814483401dca47fbeeaaf383b8dbb8c13"
 
   url "https://github.com/sunnyhot/guanlan-dashboard/releases/download/v#{version}/QiemanDashboard-#{version}.zip"
   name "Guanlan"
