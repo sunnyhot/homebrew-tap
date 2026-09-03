@@ -1,6 +1,6 @@
 cask "netbar" do
-  version "0.43.1"
-  sha256 "7af59f08a474270babba372f99b3ed7df33cfc1bed0c5e9b1be932d68da0610a"
+  version "0.45.0"
+  sha256 "7017261a825f4d948d30d68df439cc3467a54a3ec19872710601695d0644fd2b"
 
   url "https://github.com/sunnyhot/NetBar/releases/download/v#{version}/NetBar.app.zip"
   name "NetBar"
