@@ -1,6 +1,6 @@
 cask "mac-software-steward" do
-  version "0.18.17"
-  sha256 "9d317ce3696ebaf8e566c836c27886b2ea634de9cf73c408470aae72107f552e"
+  version "0.19.0"
+  sha256 "663f5e522b41501ed8fa7fdb0eae4f94ae45b58199ef01d54e5ef833dad6c77a"
 
   url "https://github.com/sunnyhot/mac-software-steward/releases/download/v#{version}/MacSoftwareSteward-v#{version}.zip"
   name "MacSoftwareSteward"
