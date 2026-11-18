@@ -8,7 +8,7 @@ cask "guanlan" do
   desc "Qieman investment dashboard with AI research"
   homepage "https://github.com/sunnyhot/guanlan-dashboard"
 
-  depends_on :macos
+  depends_on macos: :sonoma
 
   app "QiemanDashboard.app"
 end
